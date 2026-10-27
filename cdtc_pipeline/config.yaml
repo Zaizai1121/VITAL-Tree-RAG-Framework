@@ -1,0 +1,18 @@
+random_seed: 2026
+
+matching:
+  mode: semantic
+  semantic_threshold: 0.80
+  time_window: 1
+  text_similarity_method: embedding
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+
+graph:
+  normalization: nodes_edges
+  exact_ged: true
+  max_exact_nodes: 12
+  ged_timeout_seconds: 2
+
+cdtc:
+  primary_alpha: 0.5
+  sensitivity_alphas: [0.3, 0.5, 0.7]
