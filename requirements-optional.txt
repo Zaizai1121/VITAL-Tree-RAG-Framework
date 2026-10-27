@@ -1,0 +1,2 @@
+# Optional embedding-based node matching only.
+sentence-transformers>=3,<6
